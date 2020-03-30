@@ -19,7 +19,8 @@ namespace book
             Console.WriteLine(" *************************************");
             Console.BackgroundColor = ConsoleColor.Black;
             // Ожидание нажатия клавиши <Enter>.
-            Console.ReadLine();
+            Console.ReadKey();
+
         }
     }
 }
