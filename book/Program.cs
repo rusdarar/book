@@ -18,8 +18,18 @@ namespace book
             Console.WriteLine(" ***** Welcome to My Rocking App *****");
             Console.WriteLine(" *************************************");
             Console.BackgroundColor = ConsoleColor.Black;
+            Console.Beep(650, 700);
+            GetUserData();
             // Ожидание нажатия клавиши <Enter>.
             Console.ReadKey();
+        }
+        private static void GetUserData()
+        {
+            Console.Write("Your name: ");
+            var user_name = Console.ReadLine();
+            Console.Write("Your age: ");
+            var user_age = int.Parse(Console.ReadLine());
+            Console.WriteLine("Hi, {0}! You are {1} years old!", user_name, user_age);
 
         }
     }
